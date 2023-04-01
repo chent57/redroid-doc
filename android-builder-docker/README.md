@@ -13,9 +13,12 @@ ReDroid manifest include several branches / snapshots:
 ```bash
 # fetch code
 mkdir ~/redroid && cd ~/redroid
-repo init -u https://github.com/remote-android/platform_manifests.git -b <REV> --depth=1
+# 修改仓库地址使用自定义的中科大AOSP源
+repo init -u https://github.com/chent57/platform_manifests.git -b <REV> --depth=1
+# repo init -u https://github.com/remote-android/platform_manifests.git -b <REV> --depth=1
 repo sync -c
 ```
+> ubuntu20.04同步过程中出现`gnutls_handshake() failed: The TLS connection was non-properly terminated.`问题时，尝试把Https改为Http或配置SSH方式。
 
 ## Build
 ```bash
