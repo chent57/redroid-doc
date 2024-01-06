@@ -13,7 +13,7 @@ ReDroid manifest include several branches / snapshots:
 ```bash
 # fetch code
 mkdir ~/redroid && cd ~/redroid
-# 修改仓库地址使用自定义的中科大AOSP源
+# 修改仓库地址使用自定义的中科大AOSP源, <REV> is redroid version, eg:redroid-11.0.0
 repo init -u https://github.com/chent57/platform_manifests.git -b <REV> --depth=1
 # repo init -u https://github.com/remote-android/platform_manifests.git -b <REV> --depth=1
 repo sync -c
